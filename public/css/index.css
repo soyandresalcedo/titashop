@@ -4,6 +4,7 @@
 }
 :root{
   /* Colores*/
+  --pink: #fc758c;
   --menta: #00C6AE;
   --yellow-green: #eec210;
   --yellow: #fbbc05;
@@ -25,7 +26,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: var(--dark-blue);  
+  /* background-color: var(--just-white);   */
   font-family: 'Montserrat', sans-serif;
   /* color: var(--just-white); */
 }
@@ -95,9 +96,8 @@ body{
 }
 
 .headerppal {
-  background: var(--dark-blue);
+  background: var(--just-white);
   overflow: hidden;
-  box-shadow: 0 8px 10px rgba(0,0,0,0.5);
   padding-bottom: 30px;
   text-align: center;
   height: 100px;
@@ -122,7 +122,7 @@ body{
   background-color: yellowgreen;
 }
 .menu {
-  background: var(--dark-blue);
+  background: var(--just-white);
   box-shadow: 0 8px 10px rgba(0,0,0,0.5);
   height: 100px;
 }
@@ -140,7 +140,7 @@ body{
   
 }
 .menu ul li a {
-  color: #fff;
+  color: var(--warm-black);
   text-decoration: none;
   padding: 0 1em;
   transition: 0.6s;
@@ -154,44 +154,26 @@ body{
   margin-top: 200px;
 }
 .banner_welcome{
-  display: flex;
-  justify-items: right;
   
-}
-.banner_welcome--me{
-
-  color: var(--dark-blue);
-  width: 450px;
-  height: 250px;
-  background-color: var(--soft-orange);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  /* justify-items: right; */
+  background-color: var(--pink);
+  margin-left: 75px;
   padding: 10px;
-  border-radius: 20px 20px 20px 0px;
-  border: solid 2px red;
-}
-.banner_welcome--me h3{
 
-  font-family: inherit;
-  font-size: 45px;
-  font-weight: bold;
-  display: flex;
-  text-align: center;
-  
 }
-.banner_welcome--me p{
 
-  display: flex;
-  text-align: center;
-  
-}
 .banner_welcome2{
 
-  color: var(--dark-blue);
+  color: var(--warm-black);
   width: 450px;
   height: 250px;
-  background-color: var(--soft-orange);
+  background-color: var(--just-white);
   padding: 10px;
   border-radius: 20px 20px 0px 20px;
-  border: solid 2px red;
+  border: solid 2px var(--dark-blue);
   margin-left: 25px;
 }
 
@@ -201,6 +183,13 @@ body{
   font-weight: bold;
   display: flex;
   text-align: center;
+  margin-top: 50px;
+}
+.banner_welcome2 p{
+  display: flex;
+  justify-content: center;
+  color: var(--warm-black);
+  font-weight: bold;
 
 }
 
@@ -543,5 +532,12 @@ body{
     border-radius: 25px 25px 25px 0px;
     background-color: var(--soft-blue);
     border: var(--warm-black) solid 2px ;
+  }
+}
+media only screen and (min-width: 993px){
+
+  body{
+
+    background-color: red;
   }
 }
