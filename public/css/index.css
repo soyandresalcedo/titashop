@@ -32,9 +32,6 @@ body{
 
 
 
-
-
-
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/Flaticon.eot");
@@ -151,12 +148,14 @@ body{
 .img_welcome{
   margin-top: 200px;
 }
+.img_welcome2{
+ display: none;
+}
 .banner_welcome{
   
   width: 90%;
   display: flex;
   justify-content: center;
-  /* justify-items: right; */
   background-color: var(--pink);
   margin-left: 75px;
   padding: 10px;
@@ -192,59 +191,16 @@ body{
 }
 
 .footer {
-  height: 100%;
-  background: var(--dark-blue);
-  margin: 0px;
-}
-.footer .contenedor-footer {
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: center;
+  height: 100px;
+  
 }
-.footer .contenedor-footer .formulario-contactenos {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col1,
-.footer .contenedor-footer .formulario-contactenos .form-col2 {
-  margin-right: 30px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
 
-}
-.footer .contenedor-footer .formulario-contactenos .form-col1 input,
-.footer .contenedor-footer .formulario-contactenos .form-col2 input {
-  margin-bottom: 10px;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col1 label {
-  color: #fff;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col1 .tipos-comentarios {
-  display: flex;
-  flex-direction: column;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col1 .tipos-comentarios label {
-  font-size: 13px;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col2 {
-  align-items: flex-start;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col2 label {
-  color: #fff;
-  margin-bottom: 1em;
-}
-.footer .contenedor-footer .formulario-contactenos .form-col2 textarea {
-  margin-bottom: 10px;
-  height: 110px;
-}
 .footer .contenedor-footer .redesSociales .realizadopor {
-  padding-top: 30px;
+  color: var(--warm-black);
+  font-weight: bold;
+  
 }
 .footer .contenedor-footer .redesSociales .realizadoclase {
   padding-bottom: 30px;
@@ -261,19 +217,19 @@ body{
   text-decoration: none;
 }
 .footer .contenedor-footer .redesSociales .logos-redes .logo-facebook:before {
-  color: var(--yellow);
+  color: var(--pink);
   content: "\f101";
   font-size: 30px;
   font-family: "Flaticon";
 }
 .footer .contenedor-footer .redesSociales .logos-redes .logo-twitter:before {
-  color: var(--yellow);
+  color: var(--pink);
   content: "\f102";
   font-size: 30px;
   font-family: "Flaticon";
 }
 .footer .contenedor-footer .redesSociales .logos-redes .logo-github:before {
-  color: var(--yellow);
+  color: var(--pink);
   content: "\f100";
   font-size: 30px;
   font-family: "Flaticon";
@@ -363,7 +319,7 @@ body{
   width: 100%;
 }
 .modal-registro {
-  width: 80% !important;
+  width: 80%;
 }
 .registro-bienvenida {
   text-align: center;
@@ -448,94 +404,19 @@ body{
   margin-bottom: 0em;
 }
 .div-btnRegistrarse a {
-  background: #126798 !important;
+  background: var(--warm-black);
 }
 .titulo-posts {
-  color: #126798;
+  color: var(--warm-black);
   font-weight: bold;
   text-align: center;
 }
 #btnUploadFile {
-  background: #126798 !important;
+  background: var(--warm-black);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   transition: 0.5s;
   margin-bottom: 1em;
   margin-top: 1em;
 }
-@media screen and (min-width: 768px) {
-  .headerppal {
-    text-align: left;
-  }
-  .headerppal .header-logotipo {
-    float: left;
-  }
-  .headerppal .header-avatar {
-    display: inline-block;
-  }
-  .menu ul {
-    height: 40px;
-  }
-  .menu ul li {
-    display: inline-block;
-  }
-  .posts .post {
-    display: inline-block;
-    margin-top: 25px;
-    width: 47%;
-  }
-  .posts .post .post-descripcion {
-    height: 120px;
-  }
-  .footer .contenedor-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .footer .contenedor-footer .formulario-contactenos {
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-  }
-  .footer .contenedor-footer .formulario-contactenos .form-col1 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .footer .contenedor-footer .formulario-contactenos .form-col1 .tipos-comentarios {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer .contenedor-footer .redesSociales {
-    margin-top: 40px;
-    margin-bottom: 45px;
-    padding-right: 3em;
-    /* border-right: 3px solid ; */
-  }
-  .registro-bienvenida {
-    text-align: left;
-  }
-  .registro-bienvenida h4 {
-    margin-bottom: 1em;
-    font-size: 2em;
-  }
-  .registro-bienvenida .registro-bienvenida-texto {
-    margin-bottom: 2em;
-    font-size: 1.5em;
-  }
-  .registro-bienvenida span {
-    font-size: 1.5em;
-  }
-  .modal-registro {
-    width: 70%;
-    border-radius: 25px 25px 25px 0px;
-    background-color: var(--soft-blue);
-    border: var(--warm-black) solid 2px ;
-  }
-}
-media only screen and (min-width: 993px){
 
-  body{
-
-    background-color: red;
-  }
-}

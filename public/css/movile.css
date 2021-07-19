@@ -1,0 +1,114 @@
+
+.headerppal .header-avatar {
+      display: inline-block;
+} 
+
+
+
+.menu ul {
+    font-size: bold;
+    height: 40px;
+}
+.menu ul li {
+    display: flex;
+}
+.banner_welcome{
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: var(--pink);
+    width: auto;
+    margin-left: 0px;
+    height: 400px;
+}
+.banner_welcome2{
+
+    color: var(--warm-black);
+    width: 250px;
+    height: 250px;
+    background-color: var(--just-white);
+    padding: 10px;
+    border-radius: 20px 20px 0px 20px;
+    border: solid 2px var(--dark-blue);
+    
+}
+  
+.banner_welcome2 h3{
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+.banner_welcome2 p{
+
+    display: flex;
+    justify-content: center;
+    color: var(--warm-black);
+    font-weight: bold;
+  
+}
+.img_welcome{
+    display: none; 
+    
+}  
+.img_welcome2{
+    display: flex; 
+    width: 100px;
+    height: 200px;
+}  
+.posts .post {
+      display: inline-block;
+      margin-top: 25px;
+      width: 47%;
+}
+.posts .post .post-descripcion {
+      height: 120px;
+}
+.footer .contenedor-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}
+.footer .contenedor-footer .formulario-contactenos {
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+}
+.footer .contenedor-footer .formulario-contactenos .form-col1 {
+      margin-top: 0;
+      margin-bottom: 0;
+}
+.footer .contenedor-footer .formulario-contactenos .form-col1 .tipos-comentarios {
+      display: flex;
+      flex-direction: row;
+}
+.footer .contenedor-footer .redesSociales {
+      margin-top: 40px;
+      margin-bottom: 45px;
+      padding-right: 3em;
+      /* border-right: 3px solid ; */
+}
+.registro-bienvenida {
+      text-align: left;
+}
+.registro-bienvenida h4 {
+      margin-bottom: 1em;
+      font-size: 2em;
+}
+.registro-bienvenida .registro-bienvenida-texto {
+      margin-bottom: 2em;
+      font-size: 1.5em;
+}
+.registro-bienvenida span {
+      font-size: 1.5em;
+}
+.modal-registro {
+      width: 70%;
+      border-radius: 25px 25px 25px 0px;
+      background-color: var(--soft-blue);
+      border: var(--warm-black) solid 2px ;
+}
+
