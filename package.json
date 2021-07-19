@@ -1,0 +1,35 @@
+{
+  "name": "titashop",
+  "version": "1.0.0",
+  "description": "e-commerce",
+  "main": "app/general.js",
+  "scripts": {
+    "test": "no test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyandresalcedo/titashop"
+  },
+  "keywords": [
+    "e-commerce"
+  ],
+  "author": "Andrés Salcedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soyandresalcedo/titashop"
+  },
+  "homepage": "https://github.com/titashop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-minify": "0.0.15",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-stylus": "^2.6.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}
