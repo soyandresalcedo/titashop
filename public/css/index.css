@@ -81,7 +81,7 @@ body{
   border-radius: var(--warm-black);
   border: black solid 2px;
   border-radius: 15px 15px 0px 15px;
-  background-color:var(--red);
+  background-color:var(--pink);
   
   transition: 0.5s;
 }
