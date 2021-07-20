@@ -67,10 +67,9 @@
 .posts .post .post-descripcion {
       height: 120px;
 }
-.footer .contenedor-footer {
+.contenedor-footer {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      justify-content: center;
 }
 .footer .contenedor-footer .formulario-contactenos {
       display: flex;
@@ -113,11 +112,34 @@
 }
 
 /* Grilla */
-.container{
-      width: 80%;
+
+.container__collection{
       display: flex;
-      overflow-x: scroll;
-      overscroll-behavior-x: contain;
-      scroll-snap-type: x proximity;
-      box-sizing: none;
-    }
+      flex-wrap: wrap;
+      flex-direction: column;
+      
+}
+
+
+
+/* PLANS */
+
+.Plans, .Plans H3{
+      width: 100%;
+      min-width: 320px;
+      padding-bottom: 70px;
+      text-align: center;
+      margin-top: 50px;
+      font-weight: bold;
+      font-size: 2.28rem;
+    
+}
+
+/* FOOTER */
+.footer .contenedor-footer .redesSociales .realizadopor {
+      font-size: 14px;
+      font-weight: bold;
+      color: var(--warm-black);
+      
+      
+}

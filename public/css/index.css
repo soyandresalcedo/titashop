@@ -620,11 +620,7 @@ body{
 /* Grilla */
 .container{
   width: 100%;
-  display: flex;
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity;
-  box-sizing: none;
+  
 }
 .container__collection{
   display: grid;
@@ -632,6 +628,7 @@ body{
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  
 }
   
 .div1 {
