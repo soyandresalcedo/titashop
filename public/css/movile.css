@@ -112,3 +112,12 @@
       border: var(--warm-black) solid 2px ;
 }
 
+/* Grilla */
+.container{
+      width: 80%;
+      display: flex;
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+      box-sizing: none;
+    }

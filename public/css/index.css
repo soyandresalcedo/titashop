@@ -26,7 +26,7 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 
 
@@ -96,14 +96,12 @@ body{
   padding-bottom: 30px;
   text-align: center;
   height: 100px;
+  
 }
 
 
-/* .headerppal .header-logotipo img:hover {
-  transform: scale(1.2);
-} */
 .headerppal .header-avatar {
-  display: none;
+  display: block;
   float: right;
   margin-top: -200px;
   margin-right: 50px;
@@ -117,6 +115,8 @@ body{
   background-color: yellowgreen;
 }
 .menu {
+  display: block;
+  justify-content: center;
   background: var(--just-white);
   box-shadow: 0 8px 10px rgba(0,0,0,0.5);
   height: 100px;
@@ -128,22 +128,23 @@ body{
   display: block;
   line-height: 40px;
   transition: 0.6s;
+  
 }
 .menu ul li:hover {
-  background: none;
-  
-  
+  background-color var(--pink);
+    
 }
 .menu ul li a {
   color: var(--warm-black);
   text-decoration: none;
   padding: 0 1em;
   transition: 0.6s;
+  background-color var(--pink);
 }
 .menu ul li a:hover {
   font-size: 17px;
-  color: var(--yellow);
-  text-decoration: underline;
+  text-decoration: none;
+  background-color var(--pink);
 }
 .img_welcome{
   margin-top: 200px;
@@ -338,10 +339,11 @@ body{
   margin-bottom: 0.5em;
 }
 .registro-bienvenida .registro-bienvenida-texto {
+  display: block;
   color: var(--warm-black);
   margin-bottom: 1em;
   font-size: 1em;
-  text-align: left;
+  text-align: center;
 }
 .registro-bienvenida span {
   color: #7acc2d;
@@ -349,34 +351,34 @@ body{
   font-weight: bold;
 }
 .registro-formulario {
-  border-left: 0.3em solid #126798;
+  border-left: 0.3em solid var(--warm-black);
 }
 .registro-formulario div {
   margin: 0;
 }
 .registro-formulario label {
-  color: #126798;
+  color: var(--warm-black);
   font-size: 1em;
 }
 .registro-formulario a {
   margin-top: 2em;
   text-align: center;
-  width: 80% !important;
+  width: 80%;
 }
 .registro-formulario .div-btnInicioSesion {
   text-align: center;
 }
 .registro-formulario .div-btnInicioSesion a {
-  background: #126798 !important;
+  background-color: var(--warm-black);
 }
 .registro-formulario .lbl-ingresar-redes {
-  color: #126798;
+  color: var(--warm-black);
   font-weight: bold;
   padding-top: 1em;
   text-align: center;
 }
 .registro-formulario .registro-iconos-redes {
-  background: var(--soft-blue);
+  
   text-align: center;
 }
 .registro-formulario .registro-iconos-redes .logo-facebook:before {
@@ -451,26 +453,7 @@ body{
   box-shadow: 0 2px 6px 0 #20212447;
   border-color: #dfe1e500;
 }
-/* .main_search .search-icon{
-  background-image: url("https://img.icons8.com/android/24/000000/search.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  opacity: 0.5;
-}
-.main_search .microphone_icon {
-  background-image: url("https://img.icons8.com/metro/26/000000/microphone.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  opacity: 0.5;
-} */
+
 
 /* PRODUCT CONTAINER */
 .icon--3{
@@ -483,6 +466,7 @@ body{
   flex-wrap: wrap;
   padding: 25px;
   margin-left: 10px;
+  
   
 }
 .product__details{
@@ -519,3 +503,168 @@ body{
   
   transform: scale(0.95);
 }
+/* Cards */
+.Plans, .Plans H3{
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+
+}
+
+.plans-container-slider{
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  box-sizing: none;
+    
+}
+.plans-cards{
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 200px;
+  max-width: 250px;
+  height: 250px;
+  padding: 20px;
+  background-color: var(--off-white);
+  border-radius: 10px;
+  position: relative;
+  margin: 20px 20px;
+  
+}
+.recomendado{
+  position: absolute;
+  width: 130px;
+  height: 31px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  padding: 7px;
+  background-color: var(--pink);
+  border-radius: 8px;
+  color: var(--warm-black);
+ 
+}
+.plan-card--title{
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+  margin-left: 12px;
+  margin-bottom: 10px;
+  
+}
+.plan-card--price{
+  padding: 5px 0;
+  font-size: 4.2rem;
+  font-weight: bold;
+  line-height: 6.2rem;
+  color: var(--black);
+  font-family: 'Inter', sans-serif;
+}
+
+.icon--4 img{
+  width: 20px;
+  height: 15px;
+  background-repeat: no-repeat;
+  vertical-align: text-top;;
+ 
+}
+.plan-card-saving{
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1rem;
+  text-align: center;
+  color: #757575;
+  padding: 10px;
+
+}
+.plan-card--ca{
+  width: 151px;
+  height: 30px;
+  top: 2792px;
+  left: 85px;
+  border-radius: 4px;
+  padding: 12 16;
+  border: solid;
+  border-color: var(--black);
+  background-color: var(--pink);
+
+}
+.plan-card--ca p{
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 1.8rem;
+  text-align: left;
+  margin-left: 20px;
+}
+.plan-card--ca p .vector{
+  display: inline-flex;
+  width: 20px;
+  height: 14px;
+  background-image: url(/Assets/icons/orange-right-arrow.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 5px;
+  margin: 2px 5px 5px 10px ;
+}
+/* Grilla */
+.container{
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  box-sizing: none;
+}
+.container__collection{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+  
+.div1 {
+  background-color: pink;
+  grid-area: 1 / 2 / 3 / 3; 
+  cursor: pointer;
+}
+.div2 { 
+  grid-area: 3 / 2 / 6 / 3; 
+  background-color: pink;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+}
+.div3 { 
+  grid-area: 1 / 3 / 3 / 4; 
+  background-color: pink;
+  cursor: pointer;
+}
+.div4 { 
+  grid-area: 1 / 4 / 4 / 5; 
+  background-color: pink;
+  cursor: pointer;
+}
+.div5 { 
+  grid-area: 3 / 3 / 6 / 4; 
+  background-color: pink;
+  cursor: pointer;
+}
+.div6 { 
+  grid-area: 4 / 4 / 6 / 5; 
+  background-color: pink;
+  cursor: pointer;
+}
+
