@@ -1,10 +1,10 @@
 
-.headerppal .header-avatar {
-      display: inline-block;
-} 
+/* MENU UL */
+
+.menu{
 
 
-
+}
 .menu ul {
     font-size: bold;
     height: 40px;
@@ -12,6 +12,21 @@
 .menu ul li {
     display: flex;
 }
+
+
+/* Boton inicio de sesión */
+.menu .btnPpal {
+
+      border-radius: var(--warm-black);
+      border: black solid 2px;
+      border-radius: 15px 15px 0px 15px;
+      background-color:var(--red);
+      font-family: inherit;
+      font-weight: bold;
+      transition: 0.5s;
+}
+
+
 .banner_welcome{
     
     display: flex;
@@ -59,6 +74,26 @@
     width: 100px;
     height: 200px;
 }  
+.img_welcome2 img{
+      transform: scale(0.9);
+
+}
+
+/* MODAL */
+.modal .modal-content{
+
+      padding: 10%;
+}
+.modal .modal-content img{
+      display: none;
+}
+
+
+
+
+
+
+
 .posts .post {
       display: inline-block;
       margin-top: 25px;
@@ -94,6 +129,8 @@
       text-align: left;
 }
 .registro-bienvenida h4 {
+      display: block;
+      text-align: center;
       margin-bottom: 1em;
       font-size: 2em;
 }
@@ -115,7 +152,7 @@
 
 .container__collection{
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       flex-direction: column;
       
 }
